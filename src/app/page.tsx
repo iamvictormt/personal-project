@@ -807,9 +807,15 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="flex flex-col gap-4 border-t border-border px-6 py-10 font-mono text-[11px] tracking-[0.18em] text-muted-foreground md:flex-row md:items-center md:justify-between md:px-14">
-        <span>&copy; {new Date().getFullYear()} VICTOR TORRES // TODOS OS DIREITOS RESERVADOS</span>
-        <span>ENG. DE SOFTWARE &bull; NEXT.JS 15 &bull; BRASIL</span>
+      <footer className="border-t border-border px-5 py-8 font-mono text-[9px] tracking-[0.12em] text-muted-foreground uppercase sm:px-6 sm:text-[10px] sm:tracking-[0.16em] md:px-14 md:py-10 md:text-[11px] md:tracking-[0.18em]">
+        <div className="mx-auto grid max-w-[1400px] gap-3 text-center leading-relaxed sm:gap-4 md:grid-cols-[1fr_auto] md:items-center md:text-left">
+          <span className="mx-auto max-w-[20rem] md:mx-0 md:max-w-none">
+            &copy; {new Date().getFullYear()} Victor Torres // Todos os direitos reservados
+          </span>
+          <span className="mx-auto max-w-[18rem] md:mx-0 md:max-w-none md:text-right">
+            Eng. de Software &bull; Next.js 15 &bull; Brasil
+          </span>
+        </div>
       </footer>
     </div>
   );
