@@ -548,7 +548,7 @@ export default function Home() {
                 />
               </div>
               <p>
-                Sou formado em Engenharia de Software pela UniEVANGÉLICA e atuo em desenvolvimento
+                Sou formado em Engenharia de Software pela Universidade Evangélica de Goiás e atuo em desenvolvimento
                 web com front-end, back-end e arquitetura de sistemas.
               </p>
             </aside>
@@ -574,7 +574,7 @@ export default function Home() {
         <Reveal>
           <div className="statement-grid">
             <p className="break-words">
-              Sou Victor Monteiro Torres, desenvolvedor de software formado pela UniEVANGÉLICA.
+              Sou Victor Monteiro Torres, desenvolvedor de software formado pela Universidade Evangélica de Goiás.
               Trabalho com aplicações web de ponta a ponta, conectando interfaces objetivas,
               serviços de back-end bem organizados e decisões técnicas que sustentam o produto
               depois do lançamento.
