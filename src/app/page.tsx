@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
 import ProjectShowcase from "@/components/project-showcase";
 import { PROJECTS } from "@/data/projects";
 
@@ -425,33 +425,33 @@ export default function Home() {
       {/* HERO */}
       <section
         id="inicio"
-        className="relative flex min-h-screen items-center px-6 pt-32 pb-20 md:px-14"
+        className="relative flex min-h-[100svh] items-center px-5 pt-28 pb-14 sm:px-6 md:px-14 md:pt-32 md:pb-20"
       >
-        <div className="mx-auto grid w-full max-w-[1400px] items-center gap-12 lg:grid-cols-2">
+        <div className="mx-auto grid w-full max-w-[1400px] items-center gap-10 md:gap-12 lg:grid-cols-2">
           {/* LEFT: EDITORIAL COPY */}
-          <div className="relative z-20 space-y-6">
-            <span className="block font-mono text-xs tracking-[0.25em] text-muted-foreground uppercase">
+          <div className="relative z-20 max-w-[42rem] space-y-5 sm:space-y-6">
+            <span className="block font-mono text-[11px] tracking-[0.18em] text-muted-foreground uppercase sm:text-xs sm:tracking-[0.25em]">
               [ 01 // INÍCIO ]
             </span>
 
-            <h1 className="font-display text-[13vw] leading-[0.88] font-black tracking-[-0.04em] sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+            <h1 className="max-w-full font-display text-[clamp(3.4rem,18vw,5.5rem)] leading-[0.88] font-black tracking-[-0.04em] sm:text-[clamp(4rem,10vw,5.5rem)] md:text-7xl lg:text-[5.5rem]">
               full stack
               <br />
               developer.
             </h1>
 
-            <p className="max-w-md text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="max-w-md text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg">
               Olá, eu sou <strong>Victor Torres</strong>. Formado em Engenharia de Software,
               construo produtos completos — da interface de alto impacto à arquitetura escalável e
               resiliente.
             </p>
 
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-col gap-3 pt-2 min-[430px]:flex-row min-[430px]:items-center sm:gap-4">
               <a
                 href="#projetos"
-                className="group inline-flex items-center gap-4 font-display text-xs font-semibold tracking-[0.2em]"
+                className="group inline-flex w-full items-center gap-3 font-display text-xs font-semibold tracking-[0.16em] min-[430px]:w-auto sm:gap-4 sm:tracking-[0.2em]"
               >
-                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-secondary transition-all duration-300 group-hover:bg-foreground group-hover:text-background">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-secondary transition-all duration-300 group-hover:bg-foreground group-hover:text-background sm:h-14 sm:w-14">
                   <svg
                     width="18"
                     height="18"
@@ -468,13 +468,13 @@ export default function Home() {
 
               <a
                 href="#contato"
-                className="inline-flex items-center rounded-full border border-border px-6 py-4 font-display text-xs font-semibold tracking-[0.2em] transition-colors hover:border-foreground"
+                className="inline-flex w-full items-center justify-center rounded-full border border-border px-5 py-3.5 font-display text-xs font-semibold tracking-[0.16em] transition-colors hover:border-foreground min-[430px]:w-auto sm:px-6 sm:py-4 sm:tracking-[0.2em]"
               >
                 FALAR COMIGO
               </a>
             </div>
 
-            <div className="flex items-center gap-6 pt-4 text-sm text-muted-foreground">
+            <div className="flex max-w-full flex-wrap items-center gap-x-4 gap-y-2 pt-3 text-xs text-muted-foreground sm:gap-x-6 sm:pt-4 sm:text-sm">
               <a
                 className="transition-colors hover:text-foreground"
                 href="https://github.com/iamvictormt"
@@ -509,7 +509,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT: 4-PLANE 3D PARALLAX */}
-          <div className="relative flex h-[50vh] items-center justify-center md:h-[80vh] select-none">
+          <div className="relative order-first flex h-[34vh] min-h-[260px] items-center justify-center select-none sm:h-[42vh] md:order-none md:h-[64vh] lg:h-[80vh]">
             {/* Plane 1: Orbital Blueprint Rings */}
             <div
               className="pointer-events-none absolute aspect-square w-[88%] max-w-[560px] opacity-40 transition-transform duration-200 ease-out"
@@ -578,32 +578,32 @@ export default function Home() {
                 width={768}
                 height={960}
                 priority
-                className="h-[88%] w-auto max-h-[465px] object-contain drop-shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-transform duration-500 hover:scale-[1.02]"
+                className="h-[82%] max-h-[320px] w-auto object-contain drop-shadow-[0_24px_48px_rgba(0,0,0,0.18)] transition-transform duration-500 hover:scale-[1.02] md:h-[88%] md:max-h-[465px]"
               />
             </div>
 
             {/* Plane 4: Foreground Holographic Chips */}
             <div
-              className="pointer-events-none absolute top-[24%] left-[2%] z-20 rounded-xl border border-border/80 bg-background/90 px-3.5 py-2 shadow-lg backdrop-blur-md transition-transform duration-200 ease-out"
+              className="pointer-events-none absolute top-[18%] left-0 z-20 rounded-xl border border-border/80 bg-background/90 px-3 py-1.5 shadow-lg backdrop-blur-md transition-transform duration-200 ease-out sm:top-[24%] sm:left-[2%] sm:px-3.5 sm:py-2"
               style={{ transform: `translate3d(${x * 46}px, ${y * 46}px, 0)` }}
             >
-              <p className="font-mono text-[9px] font-bold tracking-[0.2em] text-muted-foreground">
+              <p className="font-mono text-[8px] font-bold tracking-[0.16em] text-muted-foreground sm:text-[9px] sm:tracking-[0.2em]">
                 CORE STACK
               </p>
-              <p className="font-display text-xs font-semibold text-foreground">
+              <p className="font-display text-[11px] font-semibold text-foreground sm:text-xs">
                 Next.js · Node · Cloud
               </p>
             </div>
 
             <div
-              className="pointer-events-none absolute right-[2%] bottom-[22%] z-20 rounded-xl border border-border/80 bg-background/90 px-3.5 py-2 shadow-lg backdrop-blur-md transition-transform duration-200 ease-out"
+              className="pointer-events-none absolute right-0 bottom-[16%] z-20 rounded-xl border border-border/80 bg-background/90 px-3 py-1.5 shadow-lg backdrop-blur-md transition-transform duration-200 ease-out sm:right-[2%] sm:bottom-[22%] sm:px-3.5 sm:py-2"
               style={{ transform: `translate3d(${x * 52}px, ${y * 52}px, 0)` }}
             >
-              <p className="font-mono text-[9px] font-bold tracking-[0.2em] text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
+              <p className="flex items-center gap-1.5 font-mono text-[8px] font-bold tracking-[0.14em] text-emerald-600 dark:text-emerald-400 sm:text-[9px] sm:tracking-[0.2em]">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                 LATÊNCIA &lt; 14ms
               </p>
-              <p className="font-display text-xs font-semibold text-foreground">
+              <p className="font-display text-[11px] font-semibold text-foreground sm:text-xs">
                 High Availability
               </p>
             </div>
@@ -694,16 +694,8 @@ export default function Home() {
                 [ 03 // COMPETÊNCIAS & FLUXO ]
               </span>
               <h2 className="mt-4 font-display text-4xl font-black tracking-[-0.03em] md:text-6xl">
-                capacidades
-                <br />
-                técnicas.
+                capacidades técnicas.
               </h2>
-            </Reveal>
-            <Reveal delay={100}>
-              <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-                Do design dos contratos de dados até o deploy automatizado na nuvem, cada etapa é
-                orientada a previsibilidade, performance e segurança.
-              </p>
             </Reveal>
           </div>
 
@@ -740,7 +732,7 @@ export default function Home() {
                 [ 04 // PORTFÓLIO ]
               </span>
               <h2 className="mt-3 font-display text-5xl font-black tracking-[-0.03em] md:text-7xl">
-                projetos.
+                principais projetos.
               </h2>
             </Reveal>
           </div>
@@ -752,122 +744,65 @@ export default function Home() {
       </section>
 
       {/* CONTATO */}
-      <section id="contato" className="relative px-6 py-32 md:px-14">
+      <section
+        id="contato"
+        className="relative overflow-hidden px-5 py-24 sm:px-6 md:px-14 md:py-36"
+      >
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(var(--color-border)_1px,transparent_1px),linear-gradient(90deg,var(--color-border)_1px,transparent_1px)] bg-[size:48px_48px] opacity-35" />
+        <div className="pointer-events-none absolute top-0 left-1/2 -z-10 h-full w-px bg-border" />
+
         <div className="mx-auto max-w-[1400px]">
-          <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] items-center">
-            <Reveal>
-              <div className="space-y-6">
-                <span className="block font-mono text-xs tracking-[0.25em] text-muted-foreground uppercase">
-                  [ 05 // CONTATO ]
-                </span>
+          <Reveal>
+            <div className="flex min-h-[58vh] flex-col items-center justify-center text-center md:min-h-[64vh]">
+              <span className="mb-6 font-mono text-[11px] tracking-[0.2em] text-muted-foreground uppercase sm:mb-8 sm:text-xs sm:tracking-[0.25em]">
+                [ 05 // CONTATO ]
+              </span>
+              <span className="max-w-full font-mono text-[9px] tracking-[0.28em] text-muted-foreground uppercase sm:text-[10px] sm:tracking-[0.55em]">
+                disponível para novos projetos
+              </span>
 
-                <h2 className="font-display text-5xl font-black tracking-[-0.04em] sm:text-6xl md:text-8xl leading-[0.9]">
-                  vamos
-                  <br />
-                  conversar?
-                </h2>
+              <h2 className="mt-8 max-w-full font-display text-[clamp(3.6rem,17vw,13rem)] leading-[0.86] font-black tracking-[-0.04em] sm:mt-10 md:leading-[0.82]">
+                vamos
+                <br />
+                conversar
+              </h2>
 
-                <p className="max-w-md text-base text-muted-foreground">
-                  Tem um produto desafiador ou quer elevar a arquitetura do seu sistema? Estou à
-                  disposição para novos projetos e squads de tecnologia.
-                </p>
+              <p className="mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
+                Me chama para desenhar o produto, tirar uma ideia do papel ou melhorar um sistema
+                que já está em produção.
+              </p>
 
-                <div className="flex flex-wrap gap-4 pt-4">
-                  <button
-                    type="button"
-                    onClick={handleCopyEmail}
-                    className="inline-flex items-center gap-3 rounded-full bg-foreground px-7 py-4 font-display text-xs font-semibold tracking-[0.18em] text-background transition-all hover:opacity-90 cursor-pointer"
-                  >
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <rect width="20" height="16" x="2" y="4" rx="2" />
-                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
-                    {copied ? "E-MAIL COPIADO!" : "COPIAR E-MAIL"}
-                  </button>
-
-                  <a
-                    href="https://linkedin.com/in/iamvictormt"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-4 font-display text-xs font-semibold tracking-[0.18em] transition-colors hover:border-foreground"
-                  >
-                    LINKEDIN
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path d="M7 17 17 7M7 7h10v10" />
-                    </svg>
-                  </a>
-                </div>
+              <div className="mt-8 flex items-center justify-center gap-3 sm:mt-9">
+                <a
+                  href="https://linkedin.com/in/iamvictormt"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background/70 text-muted-foreground transition-colors hover:border-foreground hover:text-foreground sm:h-14 sm:w-14"
+                >
+                  <Linkedin size={20} strokeWidth={1.8} />
+                </a>
+                <a
+                  href="https://instagram.com/iamvictormt"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background/70 text-muted-foreground transition-colors hover:border-foreground hover:text-foreground sm:h-14 sm:w-14"
+                >
+                  <Instagram size={20} strokeWidth={1.8} />
+                </a>
+                <a
+                  href="https://wa.me/?text=Ol%C3%A1%2C%20Victor!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto."
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="WhatsApp"
+                  className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-border bg-background/70 text-muted-foreground transition-colors hover:border-foreground hover:text-foreground sm:h-14 sm:w-14"
+                >
+                  <MessageCircle size={20} strokeWidth={1.8} />
+                </a>
               </div>
-            </Reveal>
-
-            {/* Contact Status Info Card */}
-            <Reveal delay={150}>
-              <div className="rounded-2xl border border-border bg-card/60 p-8 backdrop-blur-md space-y-6">
-                <div className="border-b border-border/60 pb-4">
-                  <p className="font-mono text-xs text-muted-foreground tracking-[0.2em]">
-                    [ INFORMAÇÕES DE CONTATO ]
-                  </p>
-                  <p className="mt-2 font-display text-lg font-bold">{CONTACT_EMAIL}</p>
-                </div>
-
-                <div className="space-y-3 font-mono text-xs text-muted-foreground">
-                  <div className="flex justify-between">
-                    <span>FUSO HORÁRIO:</span>
-                    <span className="text-foreground">SÃO PAULO (UTC-3)</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>RESPOSTA:</span>
-                    <span className="text-foreground">&lt; 24 HORAS</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>MODALIDADE:</span>
-                    <span className="text-foreground">REMOTO / HÍBRIDO</span>
-                  </div>
-                </div>
-
-                <div className="border-t border-border/60 pt-4 flex gap-4 text-xs font-mono">
-                  <a
-                    href="https://github.com/iamvictormt"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-foreground text-muted-foreground transition-colors"
-                  >
-                    GITHUB →
-                  </a>
-                  <a
-                    href="https://linkedin.com/in/iamvictormt"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-foreground text-muted-foreground transition-colors"
-                  >
-                    LINKEDIN →
-                  </a>
-                  <a
-                    href="https://instagram.com/iamvictormt"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="hover:text-foreground text-muted-foreground transition-colors"
-                  >
-                    INSTAGRAM →
-                  </a>
-                </div>
-              </div>
-            </Reveal>
-          </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
