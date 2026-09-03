@@ -5,17 +5,8 @@ export interface Project {
   long: string;
   metric: string;
   tags: string;
-  status: "Completo" | "Pausado";
-  images: string[];
   link: string;
 }
-
-const SCREEN_SETS = [
-  ["/assets/proj1-a.jpg", "/assets/proj1-b.jpg", "/assets/proj1-c.jpg"],
-  ["/assets/proj2-a.jpg", "/assets/proj2-b.jpg", "/assets/proj2-c.jpg"],
-  ["/assets/proj3-a.jpg", "/assets/proj3-b.jpg", "/assets/proj3-c.jpg"],
-  ["/assets/proj4-a.jpg", "/assets/proj4-b.jpg", "/assets/proj4-c.jpg"],
-];
 
 export const PROJECTS: Project[] = [
   {
@@ -25,49 +16,33 @@ export const PROJECTS: Project[] = [
     long: "Marketplace para afiliados da rede Nacho Man, conectando operação, catálogo e fluxo comercial em uma experiência direta para parceiros da marca.",
     metric: "Marketplace · Rede de afiliados",
     tags: "Next.js · Tailwind · Framer Motion · PostgreSQL · Saipos · Hostinger VPS",
-    status: "Completo",
-    images: [
-      "/assets/projects/nacho-factory-1.webp",
-      "/assets/projects/nacho-factory-2.webp",
-      "/assets/projects/nacho-factory-3.webp",
-    ],
     link: "https://nachofactory.com.br/",
   },
   {
     n: "02",
     title: "TennisPool",
     desc: "Sistema de bolão dos maiores torneios de tênis do mundo com disputa de ranking e premiações.",
-    long: "Plataforma completa de bolão esportivo para torneios de tênis, com sistema de ranking, premiações e gestão de usuários. Integração com ResendAPI para notificações e NeonDB como banco de dados serverless. Desenvolvido com Next.js e Framer Motion para uma experiência fluida e engajante.",
+    long: "Plataforma completa de bolão esportivo para torneios de tênis, com sistema de ranking, premiações e gestão de usuários. Integração com Resend API para notificações e NeonDB como banco de dados serverless. Desenvolvido com Next.js e Framer Motion para uma experiência fluida e envolvente.",
     metric: "Bolão completo · Ranking em tempo real",
     tags: "Next.js · Tailwind · Framer Motion · ResendAPI · NeonDB",
-    status: "Completo",
-    images: [
-      "/assets/projects/tpool-1.webp",
-      "/assets/projects/tpool-2.webp",
-      "/assets/projects/tpool-3.webp",
-    ],
     link: "https://tennispool.com.br/",
   },
   {
     n: "03",
     title: "Farejei",
-    desc: "Plataforma de localização de pets desaparecidos e anúncio de petshops parceiros.",
-    long: "Aplicação social para localização de animais domésticos desaparecidos, com sistema de anúncios geolocalizado, cadastro de petshops parceiros e integração com Stripe para serviços premium.",
+    desc: "Plataforma para localização de pets desaparecidos e anúncios de pet shops parceiros.",
+    long: "Aplicação social para localização de animais domésticos desaparecidos, com sistema de anúncios geolocalizados, cadastro de pet shops parceiros e integração com Stripe para serviços premium.",
     metric: "Geolocalização · Rede pet",
     tags: "Next.js · Tailwind · Stripe",
-    status: "Completo",
-    images: SCREEN_SETS[3],
     link: "https://www.farejeiapp.com.br/",
   },
   {
     n: "04",
     title: "IMDN",
-    desc: "Plataforma de cursos EAD de Angola voltada para marketing digital e negócios online.",
+    desc: "Plataforma de cursos EAD para o mercado angolano, voltada para marketing digital e negócios online.",
     long: "Plataforma EAD completa para o mercado angolano, com sistema de cursos, pagamentos via AppyPay, API GraphQL e backend em NestJS.",
-    metric: "Plataforma EAD · Mercado Angola",
+    metric: "Plataforma EAD · Mercado angolano",
     tags: "Next.js · NestJS · GraphQL · Tailwind · AppyPay",
-    status: "Completo",
-    images: SCREEN_SETS[0],
     link: "https://www.institutomdn.com/",
   },
   {
@@ -77,8 +52,6 @@ export const PROJECTS: Project[] = [
     long: "Landing page profissional para empresa de tecnologia e assessoria em TI, com foco em conversão, apresentação clara dos serviços, credibilidade e geração de leads qualificados.",
     metric: "Landing page · Geração de leads",
     tags: "Next.js · Tailwind · Framer Motion",
-    status: "Completo",
-    images: SCREEN_SETS[2],
     link: "https://frodotech.vercel.app/",
   },
 
@@ -89,19 +62,15 @@ export const PROJECTS: Project[] = [
     long: "Página profissional do cantor e compositor brasileiro OHomemSó, conectando identidade artística, conteúdo editorial e atualização via Notion.",
     metric: "Artist page · Notion CMS",
     tags: "Next.js · Tailwind · Framer Motion · Notion",
-    status: "Completo",
-    images: SCREEN_SETS[1],
     link: "https://www.ohomemso.com.br/",
   },
   {
     n: "07",
     title: "UP Connection",
-    desc: "Plataforma de conexão profissional para networking e profissionais de decoração.",
-    long: "Plataforma de networking profissional voltada para o segmento de decoração e design de interiores. Geração de oportunidades e parcerias entre profissionais, com sistema de pagamentos via Stripe, API GraphQL e backend robusto em NestJS. Arquitetura escalável preparada para crescimento acelerado.",
+    desc: "Plataforma de conexão e networking para profissionais de decoração.",
+    long: "Plataforma de networking profissional voltada para o segmento de decoração e design de interiores. Geração de oportunidades e parcerias entre profissionais, com sistema de pagamentos via Stripe, API GraphQL e back-end robusto em NestJS. Arquitetura escalável preparada para crescimento acelerado.",
     metric: "Plataforma SaaS · Pagamentos Stripe",
     tags: "Next.js · NestJS · GraphQL · Tailwind · Stripe",
-    status: "Completo",
-    images: SCREEN_SETS[0],
     link: "https://www.upconnection.app/",
   },
   // {

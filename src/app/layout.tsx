@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, Space_Grotesk } from "next/font/google";
+import { Archivo, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -9,10 +9,10 @@ const archivo = Archivo({
   display: "swap",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -24,24 +24,25 @@ export const viewport: Viewport = {
 };
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://victortorres.dev";
-const title = "Victor Torres | Desenvolvedor Full Stack para produtos digitais";
+const title = "Victor Monteiro Torres | Software Developer";
 const description =
-  "Desenvolvedor full stack e engenheiro de software para criação de sites, landing pages, SaaS, sistemas web, back-end, APIs e infraestrutura escalável.";
+  "Desenvolvedor de software formado em Engenharia de Software pela UniEVANGÉLICA, com experiência em React, Next.js, Angular, Node.js, Java, Spring Boot, bancos de dados e sistemas web.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default: title,
-    template: "%s | Victor Torres",
+    template: "%s | Victor Monteiro Torres",
   },
   description,
-  applicationName: "Victor Torres Design Studio",
-  authors: [{ name: "Victor Torres" }],
-  creator: "Victor Torres",
-  publisher: "Victor Torres",
+  applicationName: "Victor Monteiro Torres",
+  authors: [{ name: "Victor Monteiro Torres" }],
+  creator: "Victor Monteiro Torres",
+  publisher: "Victor Monteiro Torres",
   category: "technology",
   keywords: [
     "desenvolvedor full stack",
+    "software developer",
     "engenheiro de software",
     "criação de sites",
     "desenvolvimento web",
@@ -50,7 +51,10 @@ export const metadata: Metadata = {
     "sistemas web",
     "Next.js",
     "React",
+    "Angular",
     "Node.js",
+    "Java",
+    "Spring Boot",
     "SaaS",
     "API",
     "automação",
@@ -65,7 +69,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: "/",
-    siteName: "Victor Torres Design Studio",
+    siteName: "Victor Monteiro Torres",
     locale: "pt_BR",
     type: "website",
     images: [
@@ -73,7 +77,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Victor Torres - Desenvolvedor Full Stack",
+        alt: "Victor Monteiro Torres - Software Developer",
       },
     ],
   },
@@ -108,7 +112,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${archivo.variable} ${spaceGrotesk.variable}`}>
+    <html lang="pt-BR" className={`${archivo.variable} ${ibmPlexSans.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );

@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Victor Torres - Desenvolvedor Full Stack";
+export const alt = "Victor Monteiro Torres - Software Developer";
 export const size = {
   width: 1200,
   height: 630,
@@ -46,7 +46,7 @@ export default function Image() {
       />
       <div style={{ display: "flex", justifyContent: "space-between", position: "relative" }}>
         <span style={{ fontSize: 24, letterSpacing: 8, fontWeight: 700 }}>
-          VT // SOFTWARE ENGINEERING
+          VMT // SOFTWARE DEVELOPER
         </span>
         <span style={{ fontSize: 24, letterSpacing: 5 }}>BR</span>
       </div>
@@ -61,10 +61,10 @@ export default function Image() {
             fontWeight: 900,
           }}
         >
-          Victor Torres
+          Victor Monteiro Torres
         </h1>
         <p style={{ margin: 0, maxWidth: 760, fontSize: 38, lineHeight: 1.18 }}>
-          Desenvolvedor Full Stack para landing pages, SaaS, sistemas web e APIs escalaveis.
+          React, Next.js, Angular, Node.js, Java, Spring Boot e sistemas web.
         </p>
       </div>
       <div
@@ -82,9 +82,11 @@ export default function Image() {
         <span>//</span>
         <span>React</span>
         <span>//</span>
+        <span>Angular</span>
+        <span>//</span>
         <span>Node.js</span>
         <span>//</span>
-        <span>Cloud</span>
+        <span>Java</span>
       </div>
     </div>,
     size,
