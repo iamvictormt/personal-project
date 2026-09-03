@@ -1,0 +1,167 @@
+.showcaseContainer {
+  --spotlight-x: 72%;
+  --spotlight-y: 28%;
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  gap: 1rem;
+  overflow: hidden;
+  border: 1px solid color-mix(in oklch, var(--color-border), var(--color-foreground) 10%);
+  background:
+    radial-gradient(
+      circle at var(--spotlight-x) var(--spotlight-y),
+      color-mix(in oklch, var(--color-foreground), transparent 88%),
+      transparent 26rem
+    ),
+    linear-gradient(color-mix(in oklch, var(--color-border), transparent 72%) 1px, transparent 1px),
+    linear-gradient(
+      90deg,
+      color-mix(in oklch, var(--color-border), transparent 72%) 1px,
+      transparent 1px
+    ),
+    color-mix(in oklch, var(--color-card), transparent 18%);
+  background-size:
+    auto,
+    42px 42px,
+    42px 42px,
+    auto;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.showcaseContainer::before,
+.showcaseContainer::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.showcaseContainer::before {
+  inset: 0;
+  background: linear-gradient(
+    115deg,
+    transparent 0 46%,
+    color-mix(in oklch, var(--color-foreground), transparent 94%) 46% 54%,
+    transparent 54%
+  );
+}
+
+.showcaseContainer::after {
+  right: 1.25rem;
+  bottom: 1rem;
+  width: 9rem;
+  height: 9rem;
+  border-right: 1px solid var(--color-foreground);
+  border-bottom: 1px solid var(--color-foreground);
+  opacity: 0.14;
+}
+
+.systemHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-bottom: 1px solid color-mix(in oklch, var(--color-border), transparent 25%);
+  padding-bottom: 1rem;
+}
+
+.eyebrow,
+.statusCluster {
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.64rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+.systemTitle {
+  margin-top: 0.45rem;
+  max-width: 34rem;
+  color: var(--color-foreground);
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  line-height: 1.35;
+}
+
+.statusCluster {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  white-space: nowrap;
+}
+
+.statusDot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: oklch(0.72 0.19 148);
+  box-shadow: 0 0 0 5px color-mix(in oklch, oklch(0.72 0.19 148), transparent 82%);
+}
+
+.workspace {
+  display: grid;
+  gap: 1rem;
+}
+
+.browserFrame {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: color-mix(in oklch, var(--color-background), var(--color-card) 45%);
+  box-shadow: 0 24px 70px color-mix(in oklch, var(--color-foreground), transparent 92%);
+}
+
+.browserBar {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 0.8rem;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.75rem 0.9rem;
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.browserBar strong {
+  overflow: hidden;
+  color: var(--color-foreground);
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.windowControls {
+  display: inline-flex;
+  gap: 0.32rem;
+}
+
+.windowControls span {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+@media (min-width: 1024px) {
+  .workspace {
+    grid-template-columns: minmax(16rem, 0.72fr) minmax(0, 1.8fr) minmax(18rem, 0.86fr);
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 760px) {
+  .systemHeader {
+    flex-direction: column;
+  }
+
+  .browserBar {
+    grid-template-columns: auto 1fr;
+  }
+
+  .browserBar strong {
+    grid-column: 1 / -1;
+  }
+}

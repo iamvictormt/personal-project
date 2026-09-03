@@ -1,0 +1,103 @@
+.panel {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--color-border);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in oklch, var(--color-card), transparent 6%),
+      color-mix(in oklch, var(--color-background), transparent 8%)
+    ),
+    var(--color-card);
+  padding: clamp(1rem, 2vw, 1.25rem);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.85rem;
+  color: var(--color-muted-foreground);
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+}
+
+.header strong {
+  color: var(--color-foreground);
+  font-size: 0.82rem;
+}
+
+.title {
+  margin: 0;
+  color: var(--color-foreground);
+  font-family: var(--font-display, ui-sans-serif, system-ui, sans-serif);
+  font-size: clamp(1.85rem, 2.8vw, 3.15rem);
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
+  overflow-wrap: anywhere;
+}
+
+.metric {
+  margin: 0;
+  border-left: 2px solid var(--color-foreground);
+  padding-left: 0.8rem;
+  color: var(--color-foreground);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.long {
+  margin: 0;
+  color: var(--color-muted-foreground);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding-top: 0.2rem;
+}
+
+.badge {
+  border: 1px solid color-mix(in oklch, var(--color-border), var(--color-foreground) 8%);
+  background: color-mix(in oklch, var(--color-background), transparent 12%);
+  color: var(--color-muted-foreground);
+  padding: 0.45rem 0.55rem;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.link {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: auto;
+  border-bottom: 1px solid currentColor;
+  color: var(--color-foreground);
+  padding-bottom: 0.25rem;
+  font-family: var(--font-display, ui-sans-serif, system-ui, sans-serif);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    gap 180ms ease,
+    opacity 180ms ease;
+}
+
+.link:hover {
+  gap: 0.85rem;
+  opacity: 0.7;
+}
