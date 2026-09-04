@@ -18,23 +18,23 @@ export const PROJECTS: Project[] = [
     tags: "Next.js · Tailwind · Framer Motion · PostgreSQL · Saipos · Hostinger VPS",
     link: "https://nachofactory.com.br/",
   },
-  {
+    {
     n: "02",
+    title: "Atêlie Norte",
+    desc: "Casas Modernas e Arquitetura Autoral",
+    long: "Landing page para um estúdio de arquitetura para casas modernas projetadas com luz, espaço e equilíbrio.",
+    metric: "Landing Page · Conversão de clientes",
+    tags: "Next.js · Tailwind · Framer Motion",
+    link: "https://atelie-norte-arquitetura.vercel.app/",
+  },
+  {
+    n: "03",
     title: "TennisPool",
     desc: "Sistema de bolão dos maiores torneios de tênis do mundo com disputa de ranking e premiações.",
     long: "Plataforma completa de bolão esportivo para torneios de tênis, com sistema de ranking, premiações e gestão de usuários. Integração com Resend API para notificações e NeonDB como banco de dados serverless. Desenvolvido com Next.js e Framer Motion para uma experiência fluida e envolvente.",
     metric: "Bolão completo · Ranking em tempo real",
     tags: "Next.js · Tailwind · Framer Motion · ResendAPI · NeonDB",
     link: "https://tennispool.com.br/",
-  },
-  {
-    n: "03",
-    title: "Serra Alta",
-    desc: "Landing page para chalés de design, gastronomia de altitude e silêncio de floresta na Serra da Mantiqueira.",
-    long: "Landing page para chalés de design, gastronomia de altitude e silêncio de floresta na Serra da Mantiqueira, com foco em conversão, apresentação clara dos serviços e experiência visual envolvente.",
-    metric: "Bolão completo · Ranking em tempo real",
-    tags: "Next.js · Tailwind · Framer Motion",
-    link: "https://serra-alta.vercel.app/",
   },
   {
     n: "04",
@@ -56,6 +56,15 @@ export const PROJECTS: Project[] = [
   },
   {
     n: "06",
+    title: "Serra Alta",
+    desc: "Landing page para chalés de design, gastronomia de altitude e silêncio de floresta na Serra da Mantiqueira.",
+    long: "Landing page para chalés de design, gastronomia de altitude e silêncio de floresta na Serra da Mantiqueira, com foco em conversão, apresentação clara dos serviços e experiência visual envolvente.",
+    metric: "Landing Page · Conversão de reservas",
+    tags: "Next.js · Tailwind · Framer Motion",
+    link: "https://serra-alta.vercel.app/",
+  },
+  {
+    n: "07",
     title: "FrodoTech",
     desc: "Landing page profissional para empresa de tecnologia e assessoria em TI.",
     long: "Landing page profissional para empresa de tecnologia e assessoria em TI, com foco em conversão, apresentação clara dos serviços, credibilidade e geração de leads qualificados.",
@@ -65,7 +74,7 @@ export const PROJECTS: Project[] = [
   },
 
   {
-    n: "07",
+    n: "08",
     title: "OHomemSó",
     desc: "Página profissional do cantor e compositor brasileiro OHomemSó.",
     long: "Página profissional do cantor e compositor brasileiro OHomemSó, conectando identidade artística, conteúdo editorial e atualização via Notion.",
@@ -74,7 +83,7 @@ export const PROJECTS: Project[] = [
     link: "https://www.ohomemso.com.br/",
   },
   {
-    n: "08",
+    n: "09",
     title: "UP Connection",
     desc: "Plataforma de conexão e networking para profissionais de decoração.",
     long: "Plataforma de networking profissional voltada para o segmento de decoração e design de interiores. Geração de oportunidades e parcerias entre profissionais, com sistema de pagamentos via Stripe, API GraphQL e back-end robusto em NestJS. Arquitetura escalável preparada para crescimento acelerado.",
