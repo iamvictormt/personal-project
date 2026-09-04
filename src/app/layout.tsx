@@ -23,7 +23,7 @@ export const viewport: Viewport = {
   themeColor: "#f5f3ed",
 };
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://victortorres.dev";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://eu-victor.vercel.app";
 const title = "Victor Monteiro Torres | Software Developer";
 const description =
   "Desenvolvedor de software formado em Engenharia de Software pela Universidade Evangélica de Goiás, com experiência em React, Next.js, Angular, Node.js, Java, Spring Boot, bancos de dados e sistemas web.";
