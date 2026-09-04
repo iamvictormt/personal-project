@@ -29,6 +29,15 @@ export const PROJECTS: Project[] = [
   },
   {
     n: "03",
+    title: "Serra Alta",
+    desc: "Landing page para chalés de design, gastronomia de altitude e silêncio de floresta na Serra da Mantiqueira.",
+    long: "Landing page para chalés de design, gastronomia de altitude e silêncio de floresta na Serra da Mantiqueira, com foco em conversão, apresentação clara dos serviços e experiência visual envolvente.",
+    metric: "Bolão completo · Ranking em tempo real",
+    tags: "Next.js · Tailwind · Framer Motion",
+    link: "https://serra-alta.vercel.app/",
+  },
+  {
+    n: "04",
     title: "Farejei",
     desc: "Plataforma para localização de pets desaparecidos e anúncios de pet shops parceiros.",
     long: "Aplicação social para localização de animais domésticos desaparecidos, com sistema de anúncios geolocalizados, cadastro de pet shops parceiros e integração com Stripe para serviços premium.",
@@ -37,7 +46,7 @@ export const PROJECTS: Project[] = [
     link: "https://www.farejeiapp.com.br/",
   },
   {
-    n: "04",
+    n: "05",
     title: "IMDN",
     desc: "Plataforma de cursos EAD para o mercado angolano, voltada para marketing digital e negócios online.",
     long: "Plataforma EAD completa para o mercado angolano, com sistema de cursos, pagamentos via AppyPay, API GraphQL e backend em NestJS.",
@@ -46,7 +55,7 @@ export const PROJECTS: Project[] = [
     link: "https://www.institutomdn.com/",
   },
   {
-    n: "05",
+    n: "06",
     title: "FrodoTech",
     desc: "Landing page profissional para empresa de tecnologia e assessoria em TI.",
     long: "Landing page profissional para empresa de tecnologia e assessoria em TI, com foco em conversão, apresentação clara dos serviços, credibilidade e geração de leads qualificados.",
@@ -56,7 +65,7 @@ export const PROJECTS: Project[] = [
   },
 
   {
-    n: "06",
+    n: "07",
     title: "OHomemSó",
     desc: "Página profissional do cantor e compositor brasileiro OHomemSó.",
     long: "Página profissional do cantor e compositor brasileiro OHomemSó, conectando identidade artística, conteúdo editorial e atualização via Notion.",
@@ -65,7 +74,7 @@ export const PROJECTS: Project[] = [
     link: "https://www.ohomemso.com.br/",
   },
   {
-    n: "07",
+    n: "08",
     title: "UP Connection",
     desc: "Plataforma de conexão e networking para profissionais de decoração.",
     long: "Plataforma de networking profissional voltada para o segmento de decoração e design de interiores. Geração de oportunidades e parcerias entre profissionais, com sistema de pagamentos via Stripe, API GraphQL e back-end robusto em NestJS. Arquitetura escalável preparada para crescimento acelerado.",
