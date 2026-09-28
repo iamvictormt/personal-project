@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     tags: "Next.js · Tailwind · Framer Motion · PostgreSQL · Saipos · Hostinger VPS",
     link: "https://nachofactory.com.br/",
   },
-    {
+  {
     n: "02",
     title: "Atêlie Norte",
     desc: "Casas Modernas e Arquitetura Autoral",
