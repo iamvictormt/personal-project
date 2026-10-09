@@ -2,6 +2,37 @@
   border-top: 1px solid var(--color-border);
 }
 
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-muted-foreground);
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-mono, ui-monospace, SFMono-Regular, Menlo, monospace);
+  font-size: 0.62rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.filter:hover,
+.filter:focus-visible,
+.filterActive {
+  border-color: var(--color-foreground);
+  background: var(--color-foreground);
+  color: var(--color-background);
+}
+
 .projectRow {
   border-bottom: 1px solid var(--color-border);
   color: var(--color-muted-foreground);
@@ -113,6 +144,17 @@
   gap: 0.75rem;
   color: var(--color-muted-foreground);
   line-height: 1.7;
+}
+
+.metaBlock {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.metaLabel {
+  color: var(--color-foreground);
+  font-size: 0.56rem;
+  letter-spacing: 0.14em;
 }
 
 .link {

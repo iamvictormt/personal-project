@@ -467,8 +467,8 @@ export default function Home() {
           <div className="max-w-[58rem]">
             <Reveal>
               <p className="mb-8 max-w-sm font-mono text-[10px] leading-relaxed tracking-[0.22em] text-muted-foreground uppercase">
-                Desenvolvedor de software no Brasil. Produtos digitais, sistemas web e interfaces com
-                intenção.
+                Desenvolvedor de software no Brasil. Produtos digitais, sistemas web e interfaces
+                com intenção.
               </p>
             </Reveal>
             <Reveal delay={90}>
@@ -548,8 +548,8 @@ export default function Home() {
                 />
               </div>
               <p>
-                Sou formado em Engenharia de Software pela Universidade Evangélica de Goiás e atuo em desenvolvimento
-                web com front-end, back-end e arquitetura de sistemas.
+                Desenvolvedor de software com experiência em produtos web, mobile e arquitetura de
+                sistemas, do primeiro fluxo ao lançamento.
               </p>
             </aside>
           </Reveal>
@@ -569,27 +569,28 @@ export default function Home() {
         index="01"
         label="Sobre"
         title="Engenharia, interface e produto."
-        note="Minha base vem da engenharia de software; minha entrega combina código, clareza e experiência."
+        note="Minha base vem da engenharia de software, minha entrega combina código, clareza e experiência."
       >
         <Reveal>
-          <div className="statement-grid">
-            <p className="break-words">
-              Sou Victor Monteiro Torres, desenvolvedor de software formado pela Universidade Evangélica de Goiás.
-              Trabalho com aplicações web de ponta a ponta, conectando interfaces objetivas,
-              serviços de back-end bem organizados e decisões técnicas que sustentam o produto
-              depois do lançamento.
-            </p>
-            <div className="facts-grid">
-              {[
-                ["2021", "formação em engenharia"],
-                ["9+", "anos de desenvolvimento"],
-                ["18+", "projetos digitais"],
-              ].map(([value, label]) => (
-                <div key={value} className="fact-item">
-                  <strong>{value}</strong>
-                  <span>{label}</span>
-                </div>
-              ))}
+          <div className="about-minimal">
+            <div className="about-bottom">
+              <p className="about-body">
+                Sou Victor Torres, desenvolvedor de software em Anápolis. Crio produtos digitais com
+                clareza na interface, consistência no código e espaço para evoluir.
+              </p>
+              <div className="about-facts">
+                {[
+                  ["01", "2021", "formação em eng. de software"],
+                  ["02", "9+", "anos de desenvolvimento"],
+                  ["03", "18+", "projetos digitais"],
+                ].map(([index, value, label]) => (
+                  <div key={value} className="about-fact">
+                    <span>{index}</span>
+                    <strong>{value}</strong>
+                    <small>{label}</small>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </Reveal>
