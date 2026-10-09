@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://eu-victor.vercel.app";
 const title = "Victor Monteiro Torres | Software Developer";
 const description =
-  "Desenvolvedor de software formado em Engenharia de Software pela Universidade Evangélica de Goiás, com experiência em React, Next.js, Angular, Node.js, Java, Spring Boot, bancos de dados e sistemas web.";
+  "Desenvolvedor de software em Anápolis e Goiânia, especializado em produtos digitais, sites profissionais, sistemas web e arquitetura de software.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -62,6 +62,10 @@ export const metadata: Metadata = {
     "infraestrutura cloud",
     "desenvolvedor freelancer",
     "consultoria em tecnologia",
+    "desenvolvedor em Anápolis",
+    "desenvolvedor em Goiânia",
+    "criação de sites em Anápolis",
+    "criação de sites em Goiânia",
   ],
   alternates: {
     canonical: "/",
@@ -109,7 +113,7 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   appleWebApp: {
-    title: "MyWebSite",
+    title: "Victor Torres",
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,

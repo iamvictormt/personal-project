@@ -144,7 +144,7 @@ const structuredData = {
       name: "Victor Monteiro Torres",
       url: "https://victortorres.dev",
       email: CONTACT_EMAIL,
-      areaServed: "BR",
+      areaServed: ["Anápolis", "Goiânia", "Goiás", "Brasil"],
       serviceType: [
         "Desenvolvimento de sites profissionais",
         "Landing pages para tráfego pago",
@@ -575,8 +575,8 @@ export default function Home() {
           <div className="about-minimal">
             <div className="about-bottom">
               <p className="about-body">
-                Sou Victor Torres, desenvolvedor de software em Anápolis. Crio produtos digitais com
-                clareza na interface, consistência no código e espaço para evoluir.
+                Sou Victor Torres, desenvolvedor de software em Anápolis e Goiânia. Crio produtos
+                digitais com clareza na interface, consistência no código e espaço para evoluir.
               </p>
               <div className="about-facts">
                 {[
